@@ -1,5 +1,7 @@
 # tailgate
 
+[![CI](https://github.com/yafi-s/tailgate/actions/workflows/ci.yml/badge.svg)](https://github.com/yafi-s/tailgate/actions/workflows/ci.yml)
+
 **A Go read gateway that reduces straggler latency while bounding duplicate work.**
 
 Tailgate sends a read to one replica and may launch one additional attempt when
