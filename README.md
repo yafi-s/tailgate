@@ -14,7 +14,7 @@ In the checked-in **500-request loopback experiment**, p99 fell from **43.3 ms t
 controlled synthetic straggler workload, not a production throughput claim.
 [Read the setup, raw results, and limitations](docs/BENCHMARKS.md).
 
-Systems research project, built with AI assistance. No external Go dependencies.
+Systems research project with no external Go dependencies.
 
 ## Run the experiment
 
