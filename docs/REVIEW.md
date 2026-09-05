@@ -21,5 +21,5 @@ For an extension, implement an open-loop experiment with scheduled send times an
 include queue delay in latency. Compare baseline and hedged policies at equal
 offered load, show rejected requests, and report amplification alongside p99.
 
-Reproduce the experiment and implement an extension you understand before using
-the project to substantiate interview claims.
+Built with AI assistance. Reproduce the experiment and implement an extension you
+understand before using the project to substantiate interview claims.
