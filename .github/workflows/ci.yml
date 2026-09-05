@@ -1,0 +1,21 @@
+name: ci
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  gateway:
+    strategy:
+      matrix:
+        go: ['1.23.x', '1.27.x']
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff
+        with:
+          go-version: ${{ matrix.go }}
+          cache: false
+      - run: test -z "$(gofmt -l .)"
+      - run: go vet ./...
+      - run: go test -race -cover ./...
+      - run: go build ./cmd/tailgate ./cmd/experiment
+      - run: go run ./cmd/experiment -requests 100

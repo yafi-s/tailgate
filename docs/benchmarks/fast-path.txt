@@ -1,0 +1,7 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/yafi-s/tailgate/hedge
+cpu: Apple M2
+BenchmarkGatewayFastPath-8   	  238112	      5113 ns/op	    8179 B/op	      38 allocs/op
+PASS
+ok  	github.com/yafi-s/tailgate/hedge	2.547s

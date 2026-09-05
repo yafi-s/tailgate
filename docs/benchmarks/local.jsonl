@@ -1,0 +1,2 @@
+{"attempts_per_request":1,"metrics":{"requests":500,"rejected":0,"attempts":500,"hedges":0,"hedge_wins":0,"timeouts":0,"backend_failures":0,"in_flight":0},"mode":"baseline","p50_ms":2.865,"p95_ms":42.679,"p99_ms":43.301,"requests":500}
+{"attempts_per_request":1.208,"metrics":{"requests":500,"rejected":0,"attempts":604,"hedges":104,"hedge_wins":101,"timeouts":0,"backend_failures":0,"in_flight":0},"mode":"hedged","p50_ms":2.82,"p95_ms":10.451,"p99_ms":12.32,"requests":500}
